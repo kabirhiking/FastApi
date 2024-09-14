@@ -45,11 +45,56 @@ JSON is widely used due to its simplicity and compatibility across different pro
 (https://fastapi.tiangolo.com/virtual-environments/#add-gitignore)
 
 
+**```json
 Command you can use to:
---cd awesome-project
---myenv\Scripts\Activate\  
---.\.venv\Scripts\Activate
---Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+### Example:
+If you use a weather app, the app makes a request to a weather service's API, asking for data like the current temperature. The API responds with that data, and the app displays it to you.
+
+In Python, an API call might look like this:
+
+```python
+import requests
+
+response = requests.get("https://api.weather.com/v1/location/city?apiKey=your_key")
+print(response.json())
+```
+
+Here, the app requests weather data via the API, and the server returns it in a structured format (like JSON).
+
+A **JSON file** (JavaScript Object Notation) is a lightweight, text-based format for storing and transmitting data. It represents data as key-value pairs, making it easy for humans to read and for machines to parse.
+
+### Key Features:
+- **Structure**: Data is organized in key-value pairs inside curly braces `{}`.
+- **Data Types**: Supports simple data types like strings, numbers, booleans, arrays, and objects.
+- **Use Cases**: Commonly used for configuration files, APIs, and data exchange between servers and web applications.
+
+### Example of a JSON file:
+```json
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "courses": ["Math", "Science"]
+}
+```
+
+In this example:
+- `name` is a string.
+- `age` is a number.
+- `isStudent` is a boolean.
+- `courses` is an array.
+
+JSON is widely used due to its simplicity and compatibility across different programming languages.
+
+### Virtual Environment Setup
+(https://fastapi.tiangolo.com/virtual-environments/#add-gitignore)
+
+Command line: 
+- `cd awesome-project` changes the directory to your project folder.
+- `myenv\Scripts\Activate` activates the virtual environment on Windows.
+- `.\.venv\Scripts\Activate` activates the virtual environment if it's located in the `.venv` folder.
+- `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` sets the execution policy for the current user to allow running scripts.
+
 
 
 
