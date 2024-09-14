@@ -42,8 +42,8 @@ In this example:
 JSON is widely used due to its simplicity and compatibility across different programming languages.
 
 **virtual inveroment setup**
+(https://fastapi.tiangolo.com/virtual-environments/#add-gitignore)
 
-[text](https://fastapi.tiangolo.com/virtual-environments/#add-gitignore)
 
 Command you can use to:
 --cd awesome-project
