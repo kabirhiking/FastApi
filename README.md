@@ -43,4 +43,14 @@ JSON is widely used due to its simplicity and compatibility across different pro
 
 **virtual inveroment setup**
 
+[text](https://fastapi.tiangolo.com/virtual-environments/#add-gitignore)
+
+Command you can use to:
+--cd awesome-project
+--myenv\Scripts\Activate\  
+--.\.venv\Scripts\Activate
+--Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+
 

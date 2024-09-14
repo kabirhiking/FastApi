@@ -12,11 +12,24 @@ students = {
 
 @app.get("/")
 def index():
-    return {"name": "First data"}
+    return {"name": "First API data"}
 
+# Path parameters
 @app.get("/get-student/{student_id}")
 def get_student(student_id: int = Path(..., description="The ID of the student you want to view", gt=0, lt=3)):
     return students.get(student_id, {"error": "Student not found"})
+
+# Query parameters
+@app.get("/get-by-name")
+def get_student(name: str):
+        for student_id in students:
+            if students[student_id] ["name"] == name:
+                return students[student_id]
+        return {"Data": "Not found"}
+            
+
+
+
 
 # @app.get("/get-student/{student_id}")
 # def get_student(stduent_id: int = Path(None, description= "The ID of the student you want to view", gt=0, lt=3)):
