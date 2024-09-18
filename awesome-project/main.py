@@ -19,6 +19,7 @@ def index():
 def get_student(student_id: int = Path(..., description="The ID of the student you want to view", gt=0, lt=3)):
     return students.get(student_id, {"error": "Student not found"})
 
+
 # Query parameters
 @app.get("/get-by-name")
 def get_student(name: str):
@@ -29,7 +30,7 @@ def get_student(name: str):
             
 
 
-
+# Query parameters with default value
 
 # @app.get("/get-student/{student_id}")
 # def get_student(stduent_id: int = Path(None, description= "The ID of the student you want to view", gt=0, lt=3)):
