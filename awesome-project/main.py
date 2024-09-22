@@ -31,6 +31,7 @@ def get_student(name: str):
 
 
 # Query parameters with default value
+#more app 
 
 
 # @app.get("/get-student/{student_id}")
