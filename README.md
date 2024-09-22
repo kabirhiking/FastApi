@@ -96,6 +96,27 @@ Command line:
 - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` sets the execution policy for the current user to allow running scripts.
 
 
+**Basics kotha barta :** 
+
+- `@app.get("/get-by-name/{student_id}")` 
+- `@app.get("/get-by-name/{student_id}")` 
+
+**Explanation**:
+@app.get("/get-by-name/{student_id}"):
+
+This is a FastAPI route decorator that defines an HTTP GET endpoint.
+The "/get-by-name/{student_id}" specifies that the URL will have a path parameter called student_id. For example, a request could look like /get-by-name/1, where 1 is the student_id.
+FastAPI will automatically extract the student_id from the URL and pass it to the function as an argument.
+**Why Two Identical Decorators?:**
+
+```python
+Having two identical decorators (@app.get("/get-by-name/{student_id}")) does not serve any purpose and may cause unexpected behavior or an error.
+FastAPI expects each route to be unique. So, you should remove one of the decorators.
+```
 
 
+**#short curthing**
+ ```python
+# //gt = getter than, lt = less than, ge = gatter than eques to , le = less than equesto
+```
 
