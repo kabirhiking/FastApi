@@ -1,4 +1,4 @@
-from fastapi import FastAPI,Path,Query   # type: ignore
+from fastapi import FastAPI,Path,Query  
 from typing import Optional
 from pydantic import BaseModel
 
@@ -57,9 +57,6 @@ def create_student(studnet_id : int, student : Student):
         return {"error": "Student already exists."}
     students[studnet_id] = student
     return students[studnet_id]
-
-
-
 
 
 
